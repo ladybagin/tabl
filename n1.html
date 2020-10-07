@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let newtable = document.createElement(`table`);
+      
+        newtable.setAttribute('id', 'id1');
+        newtable.style.cssText=`border: 3px solid black;
+           width: 400px;
+           height: 400px;
+           font-size: 20pt;
+           text-align: center;
+           background: coral;`;
+           document.body.append(newtable);
+
+    
+           row1=document.createElement(`tr`);
+            row1.setAttribute('id','id2');
+            row1.style.cssText=`
+            border: 1px solid black;
+            `;
+            id1.appendChild(row1);
+           
+            row2=document.createElement(`tr`);
+            row2.setAttribute('id','id3');
+            row2.style.cssText=`
+            border: 1px solid black;
+            `;
+            id1.appendChild(row2);
+
+            row3=document.createElement(`tr`);
+            row3.setAttribute('id','id4');
+            row3.style.cssText=`
+            border: 1px solid black;
+            `;
+            id1.appendChild(row3);
+
+            col1=document.createElement(`td`);
+            col1.setAttribute('id','id5');
+            col1.innerHTML=`1`;
+            col1.style.cssText=`
+            border: 1px solid black;
+            `;
+            id2.appendChild(col1);
+
+            col2=document.createElement(`td`);
+            col2.setAttribute('id','id6');
+            col2.innerHTML=`2`;
+           col2.style.cssText=`
+            border: 1px solid black;
+            `;
+            id2.appendChild(col2);
+
+            col3=document.createElement(`td`);
+            col3.setAttribute('id','id6');
+            col3.innerHTML=`3`;
+           col3.style.cssText=`
+            border: 1px solid black;
+            `;
+            id2.appendChild(col3);
+
+
+            col1=document.createElement(`td`);
+            col1.setAttribute('id','id5');
+            col1.innerHTML=`4`;
+            col1.style.cssText=`
+            border: 1px solid black;
+            `;
+            id3.appendChild(col1);
+
+            col2=document.createElement(`td`);
+            col2.setAttribute('id','id6');
+            col2.innerHTML=`5`;
+           col2.style.cssText=`
+            border: 1px solid black;
+            `;
+            id3.appendChild(col2);
+
+            col3=document.createElement(`td`);
+            col3.setAttribute('id','id6');
+            col3.innerHTML=`6`;
+           col3.style.cssText=`
+            border: 1px solid black;
+            `;
+            id3.appendChild(col3);
+
+
+            col1=document.createElement(`td`);
+            col1.setAttribute('id','id5');
+            col1.innerHTML=`7`;
+            col1.style.cssText=`
+            border: 1px solid black;
+            `;
+            id4.appendChild(col1);
+
+            col2=document.createElement(`td`);
+            col2.setAttribute('id','id6');
+            col2.innerHTML=`8`;
+           col2.style.cssText=`
+            border: 1px solid black;
+            `;
+            id4.appendChild(col2);
+
+            col3=document.createElement(`td`);
+            col3.setAttribute('id','id6');
+            col3.innerHTML=`9`;
+           col3.style.cssText=`
+            border: 1px solid black;
+            `;
+            id4.appendChild(col3);
+
+            setTimeout(function() {newtable.removeChild(row1)}, 2000);
+            setTimeout(function() {newtable.removeChild(row2)}, 4000);
+            setTimeout(function() {newtable.removeChild(row3)}, 6000);
+            setTimeout(function() {document.body.removeChild(newtable)}, 8000);
+
+    </script>
+</body>
+</html>
